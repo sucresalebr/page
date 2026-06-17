@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sucré & Salé" />
+    <meta
+      name="description"
+      content="Sucré & Salé: gastronomia artesanal premium, folhados franceses, pães especiais, salgados, congelados, pizza em casa e eventos."
+    />
+    <meta
+      property="og:title"
+      content="Sucré & Salé | Onde o cuidado vira sabor!"
+    />
+    <meta
+      property="og:description"
+      content="Passo a passo de preparo e serviços artesanais da Sucré & Salé."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/hero-forno.png" />
+    <title>Sucré & Salé | Onde o cuidado vira sabor!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --primary: #801016;
+        --secondary: #c89a54;
+        --dark: #2d3638;
+        --green: #5e0c12;
+        --cream: #f7f2eb;
+        --cream2: #fff8f1;
+        --light: #f7f2eb;
+      }
+      body {
+        background: #f7f2eb;
+        color: #4b3a35;
+      }
+      .btn-red,
+      .nav-cta {
+        background: #801016 !important;
+        border-color: #801016 !important;
+      }
+      .btn-red:hover,
+      .nav-cta:hover {
+        background: #5e0c12 !important;
+        transform: translateY(-3px);
+      }
+      #topbar {
+        background: #5e0c12;
+      }
+      .navbar {
+        background: #fff7ef;
+      }
+      .hbi,
+      .caticon,
+      .fcoi.r,
+      .fcoi.y,
+      .fcoi.g {
+        background: #801016 !important;
+        color: #c89a54 !important;
+      }
+      .bico {
+        background: #2d3638 !important;
+        color: #c89a54 !important;
+      }
+      .bname span,
+      .hl,
+      .snum,
+      .section-title span,
+      .catcard:hover h4 {
+        color: #801016 !important;
+      }
+      .ttag {
+        background: rgba(200, 154, 84, 0.15);
+        color: #c89a54;
+      }
+      .hbadge {
+        background: #fff;
+        color: #801016;
+        border: 1px solid rgba(128, 16, 22, 0.12);
+      }
+      #hero {
+        background:
+          radial-gradient(
+            circle at 70% 40%,
+            rgba(128, 16, 22, 0.16),
+            transparent 32%
+          ),
+          linear-gradient(135deg, #fff8f1 0%, #f7f2eb 55%, #f0dfca 100%);
+      }
+      .hbgtxt {
+        color: rgba(128, 16, 22, 0.06);
+      }
+      .hcircle {
+        background: #801016;
+        box-shadow: 0 25px 80px rgba(94, 12, 18, 0.25);
+      }
+      .hcircle img {
+        object-fit: cover;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+      .fcard {
+        border-color: rgba(128, 16, 22, 0.12);
+      }
+      .prep-wrap {
+        background: #fff8f1;
+        border-radius: 32px;
+        box-shadow: var(--shadow);
+        padding: 35px;
+        margin-top: 40px;
+      }
+      .prep-card {
+        border-radius: 22px;
+        overflow: hidden;
+        position: relative;
+        height: 240px;
+        cursor: pointer;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(128, 16, 22, 0.12);
+        transition: 0.35s;
+      }
+      .prep-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+      }
+      .prep-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.4s;
+      }
+      .prep-card:hover img {
+        transform: scale(1.06);
+      }
+      .prep-card:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          180deg,
+          transparent 35%,
+          rgba(0, 0, 0, 0.78)
+        );
+      }
+      .prep-card div {
+        position: absolute;
+        z-index: 2;
+        bottom: 18px;
+        left: 18px;
+        right: 18px;
+        color: white;
+        font-weight: 800;
+        font-size: 1.15rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .prep-card i {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: #801016;
+        color: #c89a54;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+        border: 1px solid #c89a54;
+      }
+      .accordion-item {
+        background: #5e0c12 !important;
+        border: 1px solid rgba(200, 154, 84, 0.35) !important;
+        color: #fff;
+      }
+      .accordion-button {
+        background: #801016 !important;
+        color: #fff !important;
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+      .accordion-button:not(.collapsed) {
+        box-shadow: none;
+        background: #5e0c12 !important;
+        color: #fff !important;
+      }
+      .accordion-button:after {
+        filter: invert(1);
+      }
+      .step-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 12px;
+      }
+      .step-list li {
+        list-style: none;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(200, 154, 84, 0.24);
+        border-radius: 16px;
+        padding: 16px;
+        text-align: center;
+      }
+      .step-list i {
+        display: block;
+        color: #c89a54;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+      .menu-card,
+      .catcard,
+      .service-card {
+        background: #fff8f1 !important;
+        border-color: rgba(128, 16, 22, 0.12) !important;
+      }
+      .service-card {
+        border: 1px solid rgba(128, 16, 22, 0.12);
+        border-radius: 22px;
+        overflow: hidden;
+        height: 100%;
+        box-shadow: var(--shadow);
+        transition: 0.35s;
+      }
+      .service-card:hover {
+        transform: translateY(-8px);
+      }
+      .service-card img {
+        height: 190px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .service-card .p-3 i,
+      .diff i {
+        color: #801016;
+        font-size: 2rem;
+      }
+      .diff {
+        background: #fff8f1;
+        border-radius: 24px;
+        padding: 28px;
+        height: 100%;
+        box-shadow: var(--shadow);
+        transition: 0.3s;
+      }
+      .diff:hover {
+        transform: translateY(-6px);
+      }
+      #special {
+        background: #801016;
+      }
+      .footer-logo {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        color: #fff;
+      }
+      .footer-logo span {
+        color: #c89a54;
+      }
+      footer {
+        background: #5e0c12;
+      }
+      .contact-card {
+        background: #fff8f1;
+        border-radius: 22px;
+        padding: 30px;
+        box-shadow: var(--shadow);
+      }
+      @media (max-width: 991px) {
+        .step-list {
+          grid-template-columns: 1fr 1fr;
+        }
+        .hcircle {
+          max-width: 420px;
+          margin: auto;
+        }
+        .prep-card {
+          height: 220px;
+        }
+      }
+      @media (max-width: 575px) {
+        .step-list {
+          grid-template-columns: 1fr;
+        }
+        .prep-wrap {
+          padding: 22px;
+        }
+        .htitle {
+          font-size: 2.5rem !important;
+        }
+        .prep-card {
+          height: 190px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topbar">
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap gap-2"
+        >
+          <div class="top-contact d-flex flex-wrap">
+            <!-- <span
+              ><i class="fas fa-envelope"></i> contato@sucreesale.com.br</span
+            > -->
+            <span
+              ><i class="fas fa-map-marker-alt"></i> Bem perto de você!
+            </span>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <!-- <span class="ttag"
+              ><i class="fas fa-map-marker-alt"></i>Onde o cuidado vira sabor!</span
+            > -->
+            <div class="tsoc">
+              <a href="#"><i class="fab fa-instagram"></i></a
+              ><a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="#hero"
+          ><div class="blogo">
+            <!-- <div class="bico"><i class="fas fa-croissant"></i></div> -->
+            <div class="bico">
+              <img src="assets/img/logo.png" alt="Sucré & Salé" />
+            </div>
+            <div>
+              <div class="bname">Sucré <span> &amp; Salé</span></div>
+            </div>
+          </div></a
+        ><button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#preparo">Preparo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contato</a>
+            </li>
+          </ul>
+          <a href="https://wa.me/5500000000000" class="nav-link nav-cta"
+            ><i class="fab fa-whatsapp me-1"></i>WhatsApp</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section id="hero">
+      <div class="hs hs1"></div>
+      <div class="hs hs2"></div>
+      <div class="hbgtxt">SUCRÉ</div>
+      <div class="container">
+        <div class="row align-items-center g-5" style="min-height: 88vh">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="hbadge">
+              <div class="hbi"><i class="fas fa-award"></i></div>
+              <span>• Croissants • Pizza em casa • Encomendas</span>
+            </div>
+            <h1 class="htitle">Sucré <span class="hl">&amp; Salé</span></h1>
+            <h2>Onde o cuidado vira sabor!</h2>
+            <p class="hdesc">
+              Aqui você encontra o passo a passo para preparar nossos produtos e
+              conhece tudo o que fazemos com amor e dedicação.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-2">
+              <a href="https://wa.me/5500000000000" class="btn-red"
+                ><i class="fab fa-whatsapp"></i>Falar no WhatsApp</a
+              ><a href="#preparo" class="btn-play"
+                ><div class="pico"><i class="fas fa-book-open"></i></div>
+                <span>Ver modo de preparo</span></a
+              >
+            </div>
+            <div class="hstats d-flex gap-3 flex-wrap mt-4">
+              <div class="hstat">
+                <span class="snum">6</span><small>Linhas de produtos</small>
+              </div>
+              <div class="sdiv"></div>
+              <div class="hstat">
+                <span class="snum">4</span><small>Guias de preparo</small>
+              </div>
+              <div class="sdiv"></div>
+              <div class="hstat">
+                <span class="snum">100%</span><small>Artesanal</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in">
+            <div style="position: relative; text-align: center">
+              <div class="hcircle">
+                <img src="assets/img/hero-forno.png" alt="Forno Sucré & Salé" />
+              </div>
+              <div class="fcard fc1">
+                <div class="fcoi r"><i class="fas fa-fire"></i></div>
+                <div>
+                  <span class="fcnum">Forno</span
+                  ><span class="fcsm">Preparo fácil</span>
+                </div>
+              </div>
+              <div class="fcard fc2">
+                <div class="fcoi y"><i class="fas fa-wheat-awn"></i></div>
+                <div>
+                  <span class="fcnum">Artesanal</span
+                  ><span class="fcsm">Receitas especiais</span>
+                </div>
+              </div>
+              <div class="fcard fc3">
+                <div class="fcoi g"><i class="fas fa-snowflake"></i></div>
+                <div>
+                  <span class="fcnum">Congelados</span
+                  ><span class="fcsm">Praticidade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mqsec">
+      <div class="mqtrack">
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Folhados franceses
+        </div>
+        <div class="mqitem"><i class="fas fa-circle"></i>Pães especiais</div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Folhados tradicionais
+        </div>
+        <div class="mqitem"><i class="fas fa-circle"></i>Congelados</div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Eventos & Catering
+        </div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Folhados franceses
+        </div>
+        <div class="mqitem"><i class="fas fa-circle"></i>Pães especiais</div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Folhados tradicionais
+        </div>
+        <div class="mqitem"><i class="fas fa-circle"></i>Congelados</div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Eventos & Catering
+        </div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Folhados franceses
+        </div>
+        <div class="mqitem"><i class="fas fa-circle"></i>Pães especiais</div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Folhados tradicionais
+        </div>
+        <div class="mqitem"><i class="fas fa-circle"></i>Congelados</div>
+        <div class="mqitem">
+          <i class="fas fa-circle"></i>Eventos & Catering
+        </div>
+      </div>
+    </div>
+    <section id="preparo" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-4" data-aos="fade-up">
+          <div class="subtitle">Modo de preparo</div>
+          <h2 class="section-title">
+            Como preparar <span>nossos produtos</span>
+          </h2>
+          <p class="sdesc mx-auto">
+            Clique no produto que deseja preparar e siga o passo a passo.
+          </p>
+        </div>
+        <div class="prep-wrap" data-aos="fade-up">
+          <div class="row g-4 mb-4">
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="prep-card"
+                data-bs-target="#collapsePao"
+                data-bs-toggle="collapse"
+              >
+                <img src="assets/img/pao-queijo.jpg" alt="Pão de Queijo" />
+                <div><i class="fas fa-cheese"></i><br />Pão de Queijo</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="prep-card"
+                data-bs-target="#collapseFolhadas"
+                data-bs-toggle="collapse"
+              >
+                <img src="assets/img/folhado1.png" alt="Massas Folhadas" />
+                <div><i class="fas fa-croissant"></i><br />Massas Folhadas</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="prep-card"
+                data-bs-target="#collapsePizza"
+                data-bs-toggle="collapse"
+              >
+                <img src="assets/img/pizza.jpg" alt="Pizza Artesanal" />
+                <div>
+                  <i class="fas fa-pizza-slice"></i><br />Pizza Artesanal
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="prep-card"
+                data-bs-target="#collapseEsfirras"
+                data-bs-toggle="collapse"
+              >
+                <img src="assets/img/esfirras.png" alt="Esfirras" />
+                <div><i class="fas fa-pie"></i><br />Esfirras abertas</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="prepAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsePao"
+                >
+                  Passo a passo - Pão de Queijo Congelado
+                </button>
+              </h2>
+              <div
+                id="collapsePao"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#prepAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="step-list">
+                    <li>
+                      <i class="fas fa-temperature-high"></i>Pré-aqueça o forno a 190°C.
+                    </li>
+                    <li>
+                      <i class="fas fa-snowflake"></i>Distribua os pães de queijo congelados em uma assadeira.
+                    </li>
+                    <li>
+                      <i class="fas fa-border-all"></i>Asse por aproximadamente 20 a 25 minutos, até dourarem.
+                    </li>
+                    <li>
+                      <i class="fas fa-clock"></i>Deixe descansar sobre uma grade vazada por 2 minutos e sirva.
+                    </li>
+                    <li>
+                      <i class="fas fa-bread-slice"></i>Dica: Não descongele antes de assar.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFolhadas"
+                >
+                  Passo a passo - Folhados Congelados
+                </button>
+              </h2>
+              <div
+                id="collapseFolhadas"
+                class="accordion-collapse collapse"
+                data-bs-parent="#prepAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="step-list">
+                    <li>
+                      <i class="fas fa-temperature-high"></i>Pré-aqueça o forno a 160°C.
+                    </li>
+                    <li>
+                      <i class="fas fa-snowflake"></i>Distribua os folhados congelados em uma assadeira sem untar.
+                    </li>
+                    <li>
+                      <i class="fas fa-border-all"></i>Asse por aproximadamente 10 a 15 minutos.
+                    </li>
+                    <li>
+                      <i class="fas fa-clock"></i>Aguarde alguns minutos e sirva.
+                    </li>
+                    <li>
+                      <i class="fas fa-croissant"></i>Dica: Para maior crocância, utilize forno com circulação de ar.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsePizza"
+                >
+                  Passo a passo - Pizza Congelada
+                </button>
+              </h2>
+              <div
+                id="collapsePizza"
+                class="accordion-collapse collapse"
+                data-bs-parent="#prepAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="step-list">
+                    <li>
+                      <i class="fas fa-temperature-high"></i>Pré-aqueça o forno a 250°C.
+                    </li>
+                    <li><i class="fas fa-box-open"></i>Retire a embalagem e coloque a pizza sobre a grade ou em uma forma.</li>
+                    <li>
+                      <i class="fas fa-grip-lines"></i>Asse por aproximadamente 8 a 12 minutos, até o queijo derreter e a borda dourar.
+                    </li>
+                    <li>
+                      <i class="fas fa-clock"></i>Deixe descansar por 2 minutos sobre uma grade vazada e sirva.
+                    </li>
+                    <li><i class="fas fa-utensils"></i>Dica: Retire a pizza do congelador enquanto o forno estiver pré-aquecendo.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEsfirras"
+                >
+                  Passo a passo - Esfirras Abertas Congeladas
+                </button>
+              </h2>
+              <div
+                id="collapseEsfirras"
+                class="accordion-collapse collapse"
+                data-bs-parent="#prepAccordion"
+              >
+                <div class="accordion-body">
+                  <ul class="step-list">
+                    <li>
+                      <i class="fas fa-temperature-high"></i>Pré-aqueça o forno a 220°C.
+                    </li>
+                    <li>
+                      <i class="fas fa-snowflake"></i>Distribua as esfirras congeladas em uma assadeira sem untar.
+                    </li>
+                    <li>
+                      <i class="fas fa-border-all"></i>Asse por aproximadamente 8 a 12 minutos até dourarem.
+                    </li>
+                    <li>
+                      <i class="fas fa-clock"></i>Deixe descansar sobre uma grade vazada por 2 minutos antes de servir.
+                    </li>
+                    <li><i class="fas fa-pie"></i>Importante: Para esfirras doces, asse apenas até aquecer o recheio (3 a 5 minutos).</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="category" class="section-padding pt-0">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="subtitle">Especialidades</div>
+          <h2 class="section-title">
+            Sabores que <span>contam histórias</span>
+          </h2>
+          <p class="sdesc mx-auto" style="max-width: 560px">
+            Linha artesanal criada para transformar momentos simples em
+            experiências especiais.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3" data-aos="fade-up">
+            <div class="catcard">
+              <div class="caticon"><i class="fas fa-croissant"></i></div>
+              <h4>Folhados</h4>
+              <p>Massas leves, crocantes e elegantes.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up">
+            <div class="catcard">
+              <div class="caticon"><i class="fas fa-bread-slice"></i></div>
+              <h4>Pães</h4>
+              <p>Fermentação lenta e ingredientes selecionados.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up">
+            <div class="catcard">
+              <div class="caticon"><i class="fas fa-pie"></i></div>
+              <h4>Salgados</h4>
+              <p>Recheios preparados com cuidado.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up">
+            <div class="catcard">
+              <div class="caticon"><i class="fas fa-pizza-slice"></i></div>
+              <h4>Pizza</h4>
+              <p>Experiência artesanal em casa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="about-img">
+              <div class="amain">
+                <img
+                  src="assets/img/fundo.jpg"
+                  alt="Pizza artesanal Sucré & Salé"
+                />
+              </div>
+              <div class="asm">
+                <img src="assets/img/folhado.png" alt="Folhado artesanal" />
+              </div>
+              <div class="aexp">
+                <span>Premium</span><small> feito com cuidado</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="subtitle">Sobre a marca</div>
+            <h2 class="section-title text-start">
+              Gastronomia artesanal com inspiração francesa
+            </h2>
+            <p class="mb-3">
+              A Sucré & Salé une técnica, cuidado e afeto para criar produtos
+              artesanais que valorizam sabor, textura e apresentação.
+            </p>
+            <p class="mb-4">
+              Trabalhamos com folhados franceses, pães especiais, salgados
+              artesanais, congelados, pizza em casa e eventos personalizados.
+            </p>
+            <a href="#services" class="btn-red"
+              ><i class="fas fa-book-open"></i>Conhecer produtos</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="subtitle">Nossos produtos e serviços</div>
+          <h2 class="section-title">
+            Produtos Frescos <span>&amp Congelados</span>
+          </h2>
+          <p class="sdesc mx-auto" style="max-width: 560px">
+            Praticidade e sabor com opções prontas para consumo ou para preparar quando desejar.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <img src="assets/img/croissants.jpg" alt="Folhados Franceses" />
+              <div class="p-3">
+                <i class="fas fa-croissant"></i>
+                <h4>Folhados Franceses</h4>
+                <p>Croissants, pain au chocolat e folhados artesanais.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <img src="assets/img/pao-queijo.jpg" alt="Pães Especiais" />
+              <div class="p-3">
+                <i class="fas fa-bread-slice"></i>
+                <h4>Pães Especiais</h4>
+                <p>Pães artesanais com fermentação lenta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <img src="assets/img/salgados.jpg" alt="Salgados Artesanais" />
+              <div class="p-3">
+                <i class="fas fa-pie"></i>
+                <h4>Folhados tradicionais</h4>
+                <p>Preparados com recheios selecionados.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <img
+                src="assets/img/folhados-franceses.jpg"
+                alt="Produtos Congelados"
+              />
+              <div class="p-3">
+                <i class="fas fa-snowflake"></i>
+                <h4>Produtos Congelados</h4>
+                <p>Praticidade sem abrir mão da qualidade artesanal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <img src="assets/img/pizza2.jpg" alt="Pizza em Casa" />
+              <div class="p-3">
+                <i class="fas fa-pizza-slice"></i>
+                <h4>Pizza em Casa</h4>
+                <p>Levamos a pizza até você para momentos especiais.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="service-card">
+              <img src="assets/img/esfirra.jpg" alt="Eventos e Catering" />
+              <div class="p-3">
+                <i class="fas fa-champagne-glasses"></i>
+                <h4>Eventos</h4>
+                <p>Atendimento para confraternizações, festas e eventos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="special">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 texto-branco" data-aos="fade-right">
+            <h2>Quer fazer um pedido ou tirar dúvidas?</h2>
+            <p>
+              Fale diretamente pelo WhatsApp e solicite orçamento para produtos,
+              eventos ou encomendas especiais.
+            </p>
+            <a href="https://wa.me/5500000000000" class="btnw">
+              <i class="fab fa-whatsapp"></i> Solicitar orçamento
+            </a>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="zoom-in">
+            <img
+              src="assets/img/esfirras.png"
+              alt="Esfirras artesanais"
+              style="max-height: 420px; object-fit: contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="why" class="section-padding">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <div class="subtitle">Diferenciais</div>
+          <h2 class="section-title">
+            Por que escolher a <span>Sucré &amp; Salé?</span>
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="diff text-center">
+              <i class="fas fa-wheat-awn"></i>
+              <h4>Receitas Artesanais</h4>
+              <p>Feitas com técnica, paciência e muito amor.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="diff text-center">
+              <i class="fas fa-leaf"></i>
+              <h4>Ingredientes Selecionados</h4>
+              <p>Qualidade que você sente no sabor.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="diff text-center">
+              <i class="fas fa-heart"></i>
+              <h4>Experiências Únicas</h4>
+              <p>Mais que produtos, criamos momentos.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up">
+            <div class="diff text-center">
+              <i class="fas fa-award"></i>
+              <h4>Tradição e Confiança</h4>
+              <p>Excelência em cada detalhe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="subtitle">Fale conosco</div>
+            <h2 class="section-title text-start">
+              Estamos prontos para atender você
+            </h2>
+            <p>
+              Entre em contato para pedidos, orçamento e informações sobre
+              eventos.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="contact-card">
+              <a
+                class="btn-red w-100 mb-3 justify-content-center"
+                href="https://wa.me/5500000000000"
+                ><i class="fab fa-whatsapp"></i>WhatsApp</a
+              ><a class="btn-red w-100 mb-3 justify-content-center" href="#"
+                ><i class="fab fa-instagram"></i>Instagram</a
+              ><a
+                class="btn-red w-100 justify-content-center"
+                href="mailto:contato@sucreesale.com.br"
+                ><i class="fas fa-envelope"></i>E-mail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="footer-logo">Sucré <span>&amp; Salé</span></div>
+            <p>
+              Onde o cuidado vira sabor! Gastronomia artesanal premium para o
+              seu dia e seus momentos especiais.
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h4>Links</h4>
+            <ul>
+              <li>
+                <a href="#hero"><i class="fas fa-chevron-right"></i> Início</a>
+              </li>
+              <li>
+                <a href="#preparo"
+                  ><i class="fas fa-chevron-right"></i> Modo de preparo</a
+                >
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fas fa-chevron-right"></i> Produtos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h4>Contato</h4>
+            <ul>
+              <li>
+                <a href="https://wa.me/5500000000000"
+                  ><i class="fab fa-whatsapp"></i> WhatsApp</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <!-- <li>
+                <a href="mailto:contato@sucreesale.com.br"
+                  ><i class="fas fa-envelope"></i> E-mail</a
+                >
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="fbot">©Sucré & Salé. Todos os direitos reservados.</div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+      document.querySelectorAll(".prep-card").forEach(function (card) {
+        card.addEventListener("click", function () {
+          setTimeout(function () {
+            document
+              .querySelector("#prepAccordion")
+              .scrollIntoView({ behavior: "smooth", block: "center" });
+          }, 250);
+        });
+      });
+    </script>
+  </body>
+</html>
